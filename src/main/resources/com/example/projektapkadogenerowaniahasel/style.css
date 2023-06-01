@@ -1,0 +1,13 @@
+.generate-button {
+    -fx-font-size: 14px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+}
+
+.exit-button {
+    -fx-font-size: 14px;
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+}
