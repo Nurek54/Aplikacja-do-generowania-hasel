@@ -4,8 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Pos?>
+
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.projektapkadogenerowaniahasel.Controller"
@@ -25,4 +26,9 @@
     <Label text="Wygenerowane hasło:" styleClass="password-label"/>
     <Label fx:id="passwordLabel" styleClass="password-label"/>
 
+    <Label styleClass="empty-space" />
+
+    <HBox alignment="BOTTOM_RIGHT">
+        <Label text="Autor: Nurek    " styleClass="author-label" />
+    </HBox>
 </VBox>

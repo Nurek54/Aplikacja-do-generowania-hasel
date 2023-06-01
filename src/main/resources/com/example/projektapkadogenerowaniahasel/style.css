@@ -49,3 +49,8 @@
     -fx-spacing: 10;
     -fx-padding: 20;
 }
+
+.author-label {
+    -fx-font-size: 10px;
+    -fx-text-fill: #808080;
+}
