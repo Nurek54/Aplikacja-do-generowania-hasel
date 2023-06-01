@@ -13,7 +13,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         primaryStage.setTitle("Generator Haseł");
-        primaryStage.setScene(new Scene(root, 400, 300));
+        primaryStage.setScene(new Scene(root, 400, 400));
 
         Scene scene = primaryStage.getScene();
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());

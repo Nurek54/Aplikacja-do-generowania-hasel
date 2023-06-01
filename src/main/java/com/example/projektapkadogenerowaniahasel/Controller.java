@@ -2,6 +2,8 @@ package com.example.projektapkadogenerowaniahasel;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -18,23 +20,27 @@ public class Controller {
     private String savedPassword;
 
     public void generatePassword(ActionEvent event) {
-        int length = Integer.parseInt(lengthTextField.getText());
-        String password = generateRandomPassword(length);
-        passwordLabel.setText(password);
+        String lengthText = lengthTextField.getText();
+        if (lengthText.matches("\\d+")) {
+            int length = Integer.parseInt(lengthText);
+            String password = generateRandomPassword(length);
+            passwordLabel.setText(password);
+        } else {
+            showAlert("Błąd", "Niepoprawna długość hasła. Wprowadź liczbę całkowitą.");
+        }
     }
 
     public void savePassword(ActionEvent event) {
         savedPassword = passwordLabel.getText();
+        showAlert("Informacja", "Hasło zostało zapisane.");
     }
 
     public void restorePassword(ActionEvent event) {
         if (savedPassword != null) {
             passwordLabel.setText(savedPassword);
+        } else {
+            showAlert("Informacja", "Brak zapisanego hasła.");
         }
-    }
-
-    public void exitApplication(ActionEvent event) {
-        System.exit(0);
     }
 
     private String generateRandomPassword(int length) {
@@ -48,5 +54,17 @@ public class Controller {
         }
 
         return sb.toString();
+    }
+
+    public void exitApplication(ActionEvent event) {
+        System.exit(0);
+    }
+
+    private void showAlert(String title, String message) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }
