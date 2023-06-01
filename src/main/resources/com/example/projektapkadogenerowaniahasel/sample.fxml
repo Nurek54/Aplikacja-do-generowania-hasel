@@ -13,7 +13,7 @@
 
     <Label text="Podaj długość hasła:" styleClass="label"/>
 
-    <TextField fx:id="lengthTextField" promptText="Podaj długość hasła (liczba całkowita)" prefWidth="200" styleClass="text-field"/>
+    <TextField fx:id="lengthTextField" promptText="Podaj długość hasła (liczba całkowita)" prefWidth="200" styleClass="text-field" alignment="CENTER"/>
 
     <Button text="Generuj hasło" onAction="#generatePassword" styleClass="generate-button"/>
     <HBox spacing="10" alignment="CENTER">
