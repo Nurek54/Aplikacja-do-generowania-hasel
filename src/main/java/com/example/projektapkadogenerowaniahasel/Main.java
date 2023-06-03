@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("generator_view.fxml"));
         Parent root = loader.load();
         primaryStage.setTitle("Generator Haseł");
         primaryStage.setScene(new Scene(root, 400, 400));

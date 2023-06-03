@@ -12,19 +12,21 @@
       fx:controller="com.example.projektapkadogenerowaniahasel.Controller"
       prefWidth="400" prefHeight="400" spacing="10" alignment="CENTER">
 
-    <Label text="Podaj długość hasła:" styleClass="label"/>
+    <Label text="Podaj długość hasła:" styleClass="label" style="-fx-font-size: 16px;"/>
 
     <TextField fx:id="lengthTextField" promptText="Podaj długość hasła (liczba całkowita)" prefWidth="200" styleClass="text-field" alignment="CENTER"/>
 
-    <Button text="Generuj hasło" onAction="#generatePassword" styleClass="generate-button"/>
-    <HBox spacing="10" alignment="CENTER">
-        <Button text="Zapisz hasło" onAction="#savePassword" styleClass="save-button"/>
-        <Button text="Przywróć hasło" onAction="#restorePassword" styleClass="restore-button"/>
-    </HBox>
-    <Button text="Wyjście" onAction="#exitApplication" styleClass="exit-button"/>
+    <Button text="Generuj hasło" onAction="#generatePassword" styleClass="generate-button" style="-fx-font-size: 16px;"/>
 
-    <Label text="Wygenerowane hasło:" styleClass="password-label"/>
-    <Label fx:id="passwordLabel" styleClass="password-label"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Zapisz hasło" onAction="#savePassword" styleClass="save-button" style="-fx-font-size: 16px;"/>
+        <Button text="Przywróć hasło" onAction="#restorePassword" styleClass="restore-button" style="-fx-font-size: 16px;"/>
+    </HBox>
+
+    <Button text="Wyjście" onAction="#exitApplication" styleClass="exit-button" style="-fx-font-size: 16px;"/>
+
+    <Label text="Wygenerowane hasło:" styleClass="password-label" style="-fx-font-size: 16px;"/>
+    <Label fx:id="passwordLabel" styleClass="password-label" style="-fx-font-size: 16px;"/>
 
     <Label styleClass="empty-space" />
 
