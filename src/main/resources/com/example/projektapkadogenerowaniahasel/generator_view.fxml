@@ -2,13 +2,15 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.geometry.Pos?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
+<VBox xmlns="http://javafx.com/javafx/16"
+      xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.example.projektapkadogenerowaniahasel.Controller"
       prefWidth="400" prefHeight="400" spacing="10" alignment="CENTER">
 
@@ -20,8 +22,9 @@
 
     <HBox spacing="10" alignment="CENTER">
         <Button text="Zapisz hasło" onAction="#savePassword" styleClass="save-button" style="-fx-font-size: 16px;"/>
-        <Button text="Przywróć hasło" onAction="#restorePassword" styleClass="restore-button" style="-fx-font-size: 16px;"/>
+        <Button text="Wyczyść hasła" onAction="#clearPasswords" styleClass="clear-button" style="-fx-font-size: 16px;"/>
     </HBox>
+    <Button text="Wyświetl zapisane hasła" onAction="#displayPasswords" styleClass="display-button" style="-fx-font-size: 16px;"/>
 
     <Button text="Wyjście" onAction="#exitApplication" styleClass="exit-button" style="-fx-font-size: 16px;"/>
 
@@ -33,4 +36,4 @@
     <HBox alignment="BOTTOM_RIGHT">
         <Label text="Autor: Nurek    " styleClass="author-label" />
     </HBox>
-</VBox>
+        </VBox>

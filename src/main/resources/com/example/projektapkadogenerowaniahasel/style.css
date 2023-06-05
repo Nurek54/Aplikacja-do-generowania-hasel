@@ -26,30 +26,25 @@
     -fx-pref-height: 25px;
 }
 
-.restore-button {
+.clear-button {
     -fx-font-size: 14px;
     -fx-background-color: #2196F3;
     -fx-text-fill: white;
     -fx-pref-height: 25px;
 }
 
+.display-button {
+    -fx-font-size: 14px;
+    -fx-background-color: gray;
+    -fx-text-fill: white;
+    -fx-pref-height: 25px;
+}
 .exit-button {
     -fx-font-size: 14px;
     -fx-background-color: #f44336;
     -fx-text-fill: white;
     -fx-pref-height: 25px;
 }
-
-.password-label {
-    -fx-font-size: 14px;
-    -fx-font-weight: bold;
-}
-
-.vbox {
-    -fx-spacing: 10;
-    -fx-padding: 20;
-}
-
 .author-label {
     -fx-font-size: 10px;
     -fx-text-fill: #808080;
